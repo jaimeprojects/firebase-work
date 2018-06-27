@@ -5,13 +5,7 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp();
 
-/*
-Figure out how to have a function do an action when a value is changed
-learn the basics of firebase but with javascript in mind
 
-
-
-*/
 // Take the text parameter passed to this HTTP endpoint and insert it into the
 // Realtime Database under the path /messages/:pushId/original
 exports.addMessage = functions.https.onRequest((req, res) => {
